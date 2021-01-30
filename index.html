@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+        <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">NEW PATIENT REGISTRATION FORM</h1>
+            <p class="lead">Register new patients here, start by clicking on patient information.</p>
+        </div>
+        </div>
+    <form action="">
+    <div class="container" id="accordion">
+        <div class="card">
+
+        <!-- patient info -->
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button type="button" class="btn btn-link"  
+                    data-toggle="collapse"
+                    data-target="#collapsePatientInfo" 
+                    aria-expanded="true" 
+                    aria-controls="collapsePatientInfo"
+                    >
+                        Patient Information
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapsePatientInfo" class="collapse show" aria-labelledby="#headingOne" data-parent="#accordion">
+                <div class="card-body">
+                <section class="patient-info">
+    
+                        <h4>Patient Information</h4>
+                        
+
+                        <div class="form-row">
+                            <div class="col-sm-4">
+                                <label for="fname">First Name</label>
+                                <input class="form-control" type="text" name="fname" id="fname" placeholder="Enter patient's first name">
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label for="lname">Last Name</label>
+                                <input class="form-control" type="text" name="lname" id="lname" placeholder="Enter patient's last name">
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label for="mname">Middle Name</label>
+                                <input class="form-control" type="text" name="mname" id="mname" placeholder="Enter patient's middle name">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-sm-6">
+                                <label for="fname">ID Number</label>
+                                <input class="form-control" type="number" min=1 name="id" id="id" placeholder="Enter patient's ID number">
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label for="birthday">Birthday</label>
+                                <input class="form-control" type="date" name="birthday" id="birthday">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-sm-6">
+                            <label for="marital_status">Marital Status</label>
+                            <select class="form-control" name="marital_status" id="marital_status">
+                                <option selected>Select the patient's marital status</option>
+                                <option value="Single">Single</option>
+                                <option value="Divorced">Divorced</option>
+                                <option value="Married">Married</option>
+                            </select>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label for="sex">Sex</label>
+                                <select class="form-control" name="sex" id="sex">
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-sm-6">
+                                <label for="employment">Employment</label>
+                                <select class="form-control" name="employment" id="employment">
+                                    <option value="Full Time">Full Time</option>
+                                    <option value="Part Time">Part Time</option>
+                                    <option value="Unemployed">Unemployed</option>
+                                    <option value="Self Employed">Self Employed</option>
+                                    <option value="Retired">Retired</option>
+                                </select>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label for="employer">Employer</label>
+                                <input class="form-control" type="text" name="employer" placeholder="Enter patient's employer">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-sm-6">
+                                <label for="occupation">Occupaton</label>
+                                <input class="form-control" type="text" placeholder="Enter patient's occupation">
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label for="occupation">Occupaton</label>
+                                <input class="form-control" class="form-control" type="text" placeholder="Enter patient's occupation">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-sm-12">
+                                <label for="address">Address</label>
+                                <input class="form-control" type="text" name="address" placeholder="Enter patient's address">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            
+                            <div class="col-sm-6">
+                                <label for="city">City</label>
+                                <input class="form-control" type="text" name="city" placeholder="Enter patient's city">
+                            </div>
+                            
+                            <div class="col-sm-6">
+                                <label for="phone">Phone</label>
+                                <input class="form-control" type="text" name="phone" placeholder="Enter patient's phone number">
+                            </div>
+
+                        </div>
+
+                        <div class="form-row">
+                            
+
+                            <div class="col-sm-6">
+                                <label for="workphone">Work Phone</label>
+                                <input class="form-control" type="text" name="workphone" placeholder="Enter patient's work phone">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="extension">Extension</label>
+                                <input class="form-control" type="text" name="extension" placeholder="Enter patient's work phone extension">
+                            </div>
+
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+
+                <!-- physician -->
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button type="button" class="btn btn-link"  
+                        data-toggle="collapse"
+                        data-target="#collapsePhysician" 
+                        aria-expanded="true" 
+                        aria-controls="collapsePhysician"
+                        >
+                            Physician
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapsePhysician" class="collapse show" aria-labelledby="#headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                    <section class="physician">
+                        <h4>Physician</h4>
+                        <div class="form-row">
+                            <label for="refphysician">Referring Physician</label>
+                            <input class="form-control" type="text" name="refphysician" 
+                            placeholder="Enter name of referring physician">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="pcfphysician">Primary Care/Family Physician</label>
+                            <input class="form-control" class="form-control" type="text" name="pcfphysician" 
+                            placeholder="Enter name of primary care/family physician">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="complaint_diagnosis">Complaint/Diagnosis</label>
+                            <textarea class="form-control" name="dia" id="" placeholder="Enter patient's complaint or diagnosis"></textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="onsetdate">Onset Date</label>
+                            <input class="form-control" type="date" name="onsetdate" placeholder="Enter patient's onset date">
+                        </div>
+                        
+
+                        
+
+                        
+
+                        
+                    </section>
+                    </div>
+                </div>
+
+                <!-- emergency contact -->
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button 
+                        class="btn btn-link" 
+                        type="button" 
+                        data-toggle="collapse" 
+                        data-target="#collapseEmergencyContact"
+                        aria-expanded="true"
+                        aria-controls="#collapseEmergencyContact"
+                        >
+                            Emergency Contact
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseEmergencyContact" class="collapse show" aria-labelledby="#headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                    <section class="emergency_contact">
+                        <h4>Emergency Contact</h4>
+                        
+                        <div class="form-row">
+                            <div class="col-sm-4">
+                                <label for="ecfname">First Name</label>
+                                <input class="form-control" type="text" name="ecfname" placeholder="Enter emergency contact first name">
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label for="eclname">Last Name</label>
+                                <input class="form-control" type="text" name="eclname" placeholder="Enter emergency contact last name">
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label for="ecmname">Middle Name</label>
+                                <input class="form-control" type="text" name="ecmname" placeholder="Enter emergency contact last name">
+                            </div>
+                        
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col">
+                            <label for="ecaddress">Address</label>
+                            <input class="form-control" type="text" 
+                            name="ecaddress"
+                            placeholder="Enter emergency contact address">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-sm-6">
+                                <label for="eccity">City</label>
+                                <input class="form-control" type="text"
+                                name="eccity"
+                                placeholder="Enter the city emergency contact lives in"
+                            >
+                            </div>
+                        
+                            <div class="col-sm-6">
+                                <label for="ecrelationship">Relationship to Patient</label>
+                                <input class="form-control" type="text" name="ecrelationship" 
+                                placeholder="Enter relationship to patient"
+                                >
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-sm-4">
+                                <label for="ecphone">Phone</label>
+                                <input class="form-control" type="text" name="ecphone" placeholder="Enter patient's phone number">
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label for="ecworkphone">Work Phone</label>
+                                <input class="form-control" type="text" name="ecworkphone" placeholder="Enter patient's work phone">
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label for="ecextension">Extension</label>
+                                <input class="form-control" type="text" name="ecextension" placeholder="Enter patient's work phone extension">
+                            </div>
+                        
+                        </div>
+
+                    </section>
+                    
+                    </div>
+                </div>
+
+                <!-- Information About Your Injury/Pain -->
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button 
+                        class="btn btn-link" 
+                        type="button" 
+                        data-toggle="collapse" 
+                        data-target="#collapseInjuryPain"
+                        aria-expanded="true"
+                        aria-controls="#collapseInjuryPain"
+                        >
+                        Information About Your Injury/Pain
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseInjuryPain" class="collapse show" aria-labelledby="#headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                        <section class="injury-pain">
+                            <h4>Information About Your Injury/Pain</h4>
+
+                            <div class="form-row">
+                                <div class="col">
+                                    <label for="accident">Is this due to an accident?</label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                
+                                    <div class="col-sm-3">
+                                        <input type="checkbox" name="accident" value="Yes">
+                                        <label for="accident_false">Yes</label>
+                                        <input type="checkbox" name="accident" value="No">
+                                        <label for="accident_false">No</label>
+                                    </div>
+
+                                    <div class="col-sm-6 col-sm-offset-2">
+                                        <input type="checkbox" name="accident_type" value="Auto">
+                                        <label for="accident_auto">Auto</label>
+
+                                        <input type="checkbox" name="accident_type" value="Work-related">
+                                        <label for="accident_work">Work-related</label>
+
+                                        <input type="checkbox" name="accident_type" value="Other">
+                                        <label for="accident_other">Other</label>
+                                    </div>
+                            
+                            </div>
+
+                            <div class="form-row">
+
+                                    <div class="col-sm-6">
+                                        <label for="accident_datetime">Auto Accident Date and Time</label>
+                                        <input class="form-control" type="datetime-local" name="accident_datetime" id="">    
+
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <label for="state_accident_occurred">State Accident Occurred</label>
+                                        <input class="form-control" type="text" name="state_accident_occurred" 
+                                         placeholder="Enter state accident occurred in">
+
+                                    </div>
+                            
+                            </div>
+
+                            <div class="form-row">
+
+                                    <div class="col-sm-6">
+
+                                        <label for="auto_insurance_info">Auto Insurance Info</label>
+                                        <input class="form-control" type="text" name="auto_insurance_info"
+                                         placeholder="Enter auto insurance information"
+                                        >
+                                    
+                                    </div>
+
+                                    <div class="col-sm-6">
+
+                                        <label for="phone">Phone</label>
+                                        <input class="form-control" type="text" name="info_phone">   
+                                    
+                                    </div>
+
+                                </div>
+
+                            <div class="form-row">
+
+                                    <div class="col">
+                                    
+                                        <label for="auto_insurance_address">Auto Insurance Address</label>
+                                        <input class="form-control" type="text" name="auto_insurance_address"
+                                        placeholder="Enter auto insurer address"
+                                        >
+                                    </div>
+                            
+                            </div>
+
+                            <div class="form-row">
+
+                                    <div class="col-sm-4">
+                                     
+                                        <label for="insurance_city">City</label>
+                                        <input class="form-control" type="text" name="insurance_city" 
+                                        placeholder="Enter city insurer located in">
+                                 
+                                    </div>
+                            
+                                    <div class="col-sm-4">
+                                    
+                                        <label for="insurance_state">State</label>
+                                        <input class="form-control" type="text" name="insurance_state" 
+                                        placeholder="Enter state insurer located in">
+                                    
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                    
+                                        <label for="insurance_zip">Zip</label>
+                                        <input class="form-control" type="number" name="insurance_zip" 
+                                        placeholder="Enter zip code of area insurer located in"
+                                        min=10000
+                                        >
+                                    
+                                    </div>
+                            
+                            </div>
+
+                            <div class="form-row">
+                              
+                              <div class="col">
+                              
+                                <label for="work_injury_datetime">Work Injury Date and Time</label>
+                                <input class="form-control" type="datetime-local" name="work_injury_datetime">
+                              </div>
+                            
+                            </div>
+
+                        </section>
+                    </div>
+                </div>
+
+                <!-- Information About Your Past Medical History -->
+                <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                        <button 
+                        class="btn btn-link" 
+                        type="button" 
+                        data-toggle="collapse" 
+                        data-target="#collapsePastMedicalHistory"
+                        aria-expanded="true"
+                        aria-controls="#collapsePastMedicalHistory"
+                        >
+                        Past Medical History
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapsePastMedicalHistory" class="collapse show" aria-labelledby="#headingFive" data-parent="#accordion">
+                    <div class="card-body">
+                        <section class="past-medical-history">
+                                    <h4>Past Medical History</h4>
+                                    <p>Please check YES or NO if you presently have or have ever been diagnosed with any of the following:</p>
+                                    <div class="row" style="margin: 10px 25%;">
+                                        <div class="col-sm-6">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                <th class="col" style="visibility:hidden;">hidden field</th>
+                                                <th class="col-1">Yes</th>
+                                                <th class="col-1">No</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>High blood pressure</td>
+                                                    <td><input type="checkbox" name="bloodpressure" value="yes" id=""></td>
+                                                    <td><input type="checkbox" name="bloodpressure" value="no" id=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Any heart problems</td>
+                                                    <td><input type="checkbox" name="heartproblems" value="yes" id=""></td>
+                                                    <td><input type="checkbox" name="heartproblems" value="no" id=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Do you have a pacemaker</td>
+                                                    <td><input type="checkbox" name="pacemaker" value="yes" id=""></td>
+                                                    <td><input type="checkbox" name="pacemaker" value="no" id=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Stroke</td>
+                                                    <td><input type="checkbox" name="stroke" value="yes" id=""></td>
+                                                    <td><input type="checkbox" name="stroke" value="no" id=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Cancer</td>
+                                                    <td><input type="checkbox" name="cancer" value="yes" id=""></td>
+                                                    <td><input type="checkbox" name="cancer" value="no" id=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lung disease</td>
+                                                    <td><input type="checkbox" name="lungdisease" value="yes" id=""></td>
+                                                    <td><input type="checkbox" name="lungdisease" value="no" id=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Seizures</td>
+                                                    <td><input type="checkbox" name="seizures" value="yes" id=""></td>
+                                                    <td><input type="checkbox" name="seizures" value="no" id=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Diabetes</td>
+                                                    <td><input type="checkbox" name="diabetes" value="yes" id=""></td>
+                                                    <td><input type="checkbox" name="diabetes" value="no" id=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Low blood sugar</td>
+                                                    <td><input type="checkbox" name="lbs" value="yes" id=""></td>
+                                                    <td><input type="checkbox" name="lbs" value="no" id=""></td>
+                                                </tr>
+                                            </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="col-sm-6">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th class="col" style="visibility:hidden;">hidden field</th>
+                                                    <th class="col-1">Yes</th>
+                                                    <th class="col-1">No</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Pregnant (currently)</td>
+                                                    <td><input type="checkbox" name="pregnant" value="yes" id=""></td>
+                                                    <td><input type="checkbox" name="pregnant" value="no" id=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Asthma</td>
+                                                    <td><input type="checkbox" name="asthma" value="yes" id=""></td>
+                                                    <td><input type="checkbox" name="asthma" value="no" id=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bronchitis</td>
+                                                    <td><input type="checkbox" name="bronchitis" value="yes" id=""></td>
+                                                    <td><input type="checkbox" name="bronchitis" value="no" id=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Emphysema</td>
+                                                    <td><input type="checkbox" name="emphysema" value="yes" id=""></td>
+                                                    <td><input type="checkbox" name="emphysema" value="no" id=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Kidney disease</td>
+                                                    <td><input type="checkbox" name="kidneydisease" value="yes" id=""></td>
+                                                    <td><input type="checkbox" name="kidneydisease" value="no" id=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Liver disease</td>
+                                                    <td><input type="checkbox" name="kidneydisease" value="yes" id=""></td>
+                                                    <td><input type="checkbox" name="kidneydisease" value="no" id=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Latex allergy</td>
+                                                    <td><input type="checkbox" name="kidneydisease" value="yes" id=""></td>
+                                                    <td><input type="checkbox" name="kidneydisease" value="no" id=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Do you smoke</td>
+                                                    <td><input type="checkbox" name="kidneydisease" value="yes" id=""></td>
+                                                    <td><input type="checkbox" name="kidneydisease" value="no" id=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Feel faint or have spells of severe dizziness</td>
+                                                    <td><input type="checkbox" name="kidneydisease" value="yes" id=""></td>
+                                                    <td><input type="checkbox" name="kidneydisease" value="no" id=""></td>
+                                                </tr>
+                                            </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <label for="illsixmonths">Have you fallen in the past six (6) months</label>
+                                        <textarea class="form-control" name="illsixmonths" id="" cols="30" rows="10"
+                                        placeholder = "Give details"
+                                        
+                                        ></textarea>
+                                
+                                    </div>
+
+                                    <div class="form-row">
+                                      
+                                       <div class="col">
+                                       
+
+                                        <label for="treatment">Are you receiving treatment for any other medical condition</label>
+                                        <textarea class="form-control" name="treatment" id="" cols="30" rows="10"
+                                        placeholder = "Give details"
+                                        ></textarea>
+                                       
+                                       
+                                       </div>
+
+                                    </div>
+
+                                    
+                        </section>
+                    </div>
+                </div>
+
+               
+        </div>
+        <div class="form-row">
+                        
+                        <div class="col text-center">
+
+                            <input type="submit" style="text-align: center;" value="Save" class="btn btn-primary btn-lg btn-block">
+                        
+                        </div>
+                        
+
+                </div>
+    </div>
+
+
+    </form>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
